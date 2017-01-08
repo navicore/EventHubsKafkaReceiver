@@ -4,7 +4,7 @@
 
 # EventHubs Kafka Receiver
 
-write data from an Azure Event Hub to Kafka
+using Spark v2.0.2 to write data to Kafka v0.10.x from an Azure Event Hub
 
 ## REQUIRED ENV VARS
 
