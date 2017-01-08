@@ -1,25 +1,45 @@
-[![Build Status](https://travis-ci.org/navicore/kafkatools.svg?branch=master)](https://travis-ci.org/navicore/kafkatools)
+# UNDER CONSTRUCTION - NOT WORKING QUITE YET
 
-# KafkaTools
+# EventHubs Kafka Receiver
 
-* a util to dump a kafka topic to a log
+write data from an Azure Event Hub to Kafka
 
-* publicly available docker image at [navicore/kafkatools](https://hub.docker.com/r/navicore/kafkatools) is the easiest way to use it.
+## REQUIRED ENV VARS
 
-commands:
-
+```shell
+    EH_PROGESSS_DIR=<CHANGE ME>
+    EH_POLICY_NAME=<CHANGE ME>
+    EH_POLICY_KEY=<CHANGE ME>
+    EH_NAMESPACE=<CHANGE ME>
+    EH_HUB_NAME=<CHANGE ME>
+    KAFKA_TOPIC=<CHANGE ME>
 ```
-docker run -it navicore/kafkatools --help
+
+## OPTIONAL ENV VARS
+```shell
+    EH_BATCH_DUR="2"
+    EH_PARTITIONS="4"
+    EH_CONSUMER_GROUP="$Default"
+    KAFKA_BROKER_LIST="localhost:9092"
 ```
 
-```
-docker run -it navicore/kafkatools --broker-list broker-0:3456,broker-1:4567 --input-topic my-topic
+## Build Jar
+
+```shell
+sbt assembly
 ```
 
-* check sbt file for version info.
+## Build Docker Image
 
-## experimenting with Concourse CI
+```shell
+sbt assembly && docker build -t myimage .
 ```
-fly -t onextent set-pipeline --pipeline kafkatools --config pipeline/pipeline.yml --var "private-key=$(cat ~/some_ci_id_rsa)" --var "docker-username=navicore" --var "docker-password=XXXXXXX" --var "github-access-token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-```
+
+## Deploy via Kubernetes
+
+TODO
+
+TODO
+
+TODO
 
