@@ -1,4 +1,5 @@
 *.class
+submit.sh
 .DS_Store
 *.log
 .idea/
