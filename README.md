@@ -1,5 +1,7 @@
 # UNDER CONSTRUCTION - NOT WORKING QUITE YET
 
+# temporarily inlining the src from the azure event hubs master repo (waiting on a jar for v2.0.3)
+
 # EventHubs Kafka Receiver
 
 write data from an Azure Event Hub to Kafka
