@@ -8,6 +8,7 @@ val sparkVersion = "2.0.2"
 
 libraryDependencies ++=
     Seq(
+      "com.microsoft.azure" %% "spark-streaming-eventhubs" % "2.0.3",
       "com.rollbar" % "rollbar" % "0.5.3",
       "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
       "ch.qos.logback" % "logback-classic" % "1.1.7",
