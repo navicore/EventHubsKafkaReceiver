@@ -1,3 +1,8 @@
+<!-- ghmig:moved -->
+> **This repository has moved to [https://git.navicore.tech/navicore/EventHubsKafkaReceiver](https://git.navicore.tech/navicore/EventHubsKafkaReceiver).**
+>
+> The GitHub copy is archived and no longer maintained.
+
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/82a371afe829428f85b3286a24888126)](https://www.codacy.com/app/navicore/EventHubsKafkaReceiver?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=navicore/EventHubsKafkaReceiver&amp;utm_campaign=Badge_Grade)
 
 # UNDER CONSTRUCTION - NOT WORKING QUITE YET
@@ -46,4 +51,3 @@ TODO
 TODO
 
 TODO
-
